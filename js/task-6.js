@@ -35,7 +35,9 @@ function getRandomHexColor() {
         }
       }
 
-      function destroyBoxes() {
-        boxesDiv.innerHTML = '';
+function destroyBoxes() {
+      while (boxesDiv.firstChild) {
+        boxesDiv.removeChild(boxesDiv.firstChild);
       }
+    }
     });
